@@ -1,0 +1,14 @@
+syntax = "proto3";
+option java_package = "fr.messager.popmes.proto";
+option java_multiple_files = true;
+
+message MeetupProto { }
+
+message AlarmProto { }
+
+message TaskTypeProto {
+  oneof inner_message {
+    MeetupProto meetup = 1;
+    AlarmProto alarm = 2;
+  }
+}

@@ -1,0 +1,43 @@
+syntax = "proto3";
+option java_package = "fr.messager.popmes.proto";
+option java_multiple_files = true;
+
+message CameraProto {
+
+}
+
+message PhotoProto {
+
+}
+
+message FileProto {
+
+}
+
+message VocalProto {
+
+}
+
+message MessageDataProto {
+
+}
+
+message SurveyProto {
+
+}
+
+message GifProto {
+
+}
+
+message MessageTypeProto {
+  oneof inner_message {
+    CameraProto camera = 1;
+    PhotoProto photo = 2;
+    FileProto file = 3;
+    VocalProto vocal = 4;
+    MessageDataProto message_data = 5;
+    SurveyProto survey = 6;
+    GifProto gif = 7;
+  }
+}
