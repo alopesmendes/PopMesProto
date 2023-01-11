@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "fr.messager.popmes.proto";
+option java_multiple_files = true;
+
+import "model/contact/user.proto";
+import "model/contact/group.proto";
+
+message ContactProto {
+  oneof inner_message {
+    UserProto user = 1;
+    GroupProto group = 2;
+  }
+}

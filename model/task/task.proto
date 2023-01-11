@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_package = "fr.messager.popmes.proto";
+option java_multiple_files = true;
+
+import "model/task/task_priority.proto";
+import "model/task/task_type.proto";
+import "model/contact/user.proto";
+import "google/protobuf/timestamp.proto";
+
+message TaskProto {
+  string id = 1;
+  TaskTypeProto type = 2;
+  TaskPriorityProto priority = 3;
+  UserProto created_by = 4;
+  google.protobuf.Timestamp creation_date = 5;
+}

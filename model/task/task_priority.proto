@@ -1,0 +1,10 @@
+syntax = "proto3";
+option java_package = "fr.messager.popmes.proto";
+option java_multiple_files = true;
+
+enum TaskPriorityProto {
+    LOW = 0;
+    MEDIUM = 1;
+    HIGH = 2;
+    URGENT = 3;
+}
