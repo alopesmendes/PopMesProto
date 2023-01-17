@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "fr.messager.popmes.proto";
+option java_multiple_files = true;
+
+import "model/message/message.proto";
+import "google/protobuf/wrappers.proto";
+
+message ConversationParamsProto {
+  repeated MessageProto messages = 1;
+  google.protobuf.StringValue contact_id = 2;
+}

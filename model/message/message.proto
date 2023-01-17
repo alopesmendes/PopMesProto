@@ -4,12 +4,13 @@ option java_multiple_files = true;
 
 import "model/message/message_type.proto";
 import "model/contact/contact.proto";
+import "model/contact/user.proto";
 import "google/protobuf/timestamp.proto";
 
 message MessageProto {
   string id = 1;
   MessageTypeProto type = 2;
-  ContactProto from = 3;
+  UserProto from = 3;
   ContactProto to = 4;
   google.protobuf.Timestamp date = 5;
 }
