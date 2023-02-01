@@ -9,8 +9,10 @@ import "google/protobuf/timestamp.proto";
 
 message TaskProto {
   string id = 1;
-  TaskTypeProto type = 2;
+  string title = 2;
   TaskPriorityProto priority = 3;
-  UserProto created_by = 4;
-  google.protobuf.Timestamp creation_date = 5;
+  TaskTypeProto type = 4;
+  google.protobuf.Timestamp begin_date = 5;
+  google.protobuf.Timestamp end_date = 6;
+  string description = 7;
 }
