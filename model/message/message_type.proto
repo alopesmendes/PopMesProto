@@ -2,33 +2,13 @@ syntax = "proto3";
 option java_package = "fr.messager.popmes.proto";
 option java_multiple_files = true;
 
-message CameraProto {
-
-}
-
-message PhotoProto {
-
-}
-
-message FileProto {
-
-}
-
-message VocalProto {
-
-}
-
-message MessageDataProto {
-
-}
-
-message SurveyProto {
-
-}
-
-message GifProto {
-
-}
+import "model/message/message_data.proto";
+import "model/message/gif.proto";
+import "model/message/camera.proto";
+import "model/message/photo.proto";
+import "model/message/file.proto";
+import "model/message/vocal.proto";
+import "model/message/survey.proto";
 
 message MessageTypeProto {
   oneof inner_message {
