@@ -13,4 +13,5 @@ message MessageProto {
   UserProto from = 3;
   ContactProto to = 4;
   google.protobuf.Timestamp date = 5;
+  ContactProto destination = 6;
 }
