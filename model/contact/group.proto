@@ -8,4 +8,5 @@ message GroupProto {
   string id = 1;
   repeated UserProto users = 2;
   string name = 3;
+  string description = 4;
 }

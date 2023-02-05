@@ -7,4 +7,5 @@ message UserProto {
   string first_name = 2;
   string last_name = 3;
   string phone_number = 4;
+  string description = 5;
 }
