@@ -3,10 +3,10 @@ option java_package = "fr.messager.popmes.proto";
 option java_multiple_files = true;
 
 
-import "model/contact/user.proto";
+import "model/contact/contact.proto";
 
 message ContactsParamsProto {
-  repeated UserProto users = 1;
+  ContactProto select_or_create_contact = 1;
   bool to_add_user_component_visibility = 2;
   bool to_add_group_component_visibility = 3;
 }
